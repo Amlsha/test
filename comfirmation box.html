@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> ex of javaiptscr</title>
+    </head>
+          <body>
+            <h1> confirmotion dialog<h/1>
+        <p id="display"></p>
+        <button onclick="myFunc()"> click </button>
+             <script> 
+                 function myFunc() {
+                    
+                    var userResponse;
+                    var message;
+                    userResponse=confirm("Do you want to learn js?");
+                    if (userResponse==true)
+                    {
+                         message="happy learnig!";
+                         }
+                         else{
+                           message="choose another programming.";
+                         }
+                    document.getElementById("display").innerHTML=message;
+                              } </script>
+    </body>
+</html>
